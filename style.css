@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap');
+:root{
+    font-size:62.5%;
+    --primary-color:rgb(219,4,4);
+    --white: #fafafa;
+    --black:#000;
+    --grey:#cac7c7;
+    --overlay:#000000b9;
+}
+*{
+    margin: 0;
+    padding:0;
+    line-height: 1.5;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* GENERAL STYLING */
+body{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    border-radius: 5px;
+    display: block;
+    object-fit: cover;
+}
+hr{
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+/* REUSABLE COMPONENT/UTILITY */
+article{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding: 5rem 0 5rem 0;
+}
+.overlay{
+    background: var(--overlay);
+}
+.bg-primary{
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+/* MAIN STYLES */
+header{
+    background: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    font-size:1.5rem;
+    font-weight: 300;
+    position: fixed;
+    width:100%;
+    z-index: 1000;
+}
+#logo{
+    display:none;
+}
+nav a{
+    color: var(--white);
+    padding:0.0625em;
+    display: block;
+}
+nav a:hover{
+    color: var(--primary-color);
+    background-color: var(--white);
+    cursor:pointer;
+    transition: 0.3s;
+}
+/* SECTIONS */
+.home-bg-image{
+    background: url("1.jpg");
+    background-position: center;
+    background-size: cover;
+    color:var(--white);
+}
+.home{
+    font-size:2.9rem;
+    padding-top:6em;
+}
+h1{
+    font-size: 4rem;
+    line-height: 1.2;
+}
+h2,h3{
+    font-size: 3rem;
+    padding:0.2em;
+    margin-bottom: 1em;
+    line-height: 1.2;
+}
+h5{
+    font-size: 2.5rem;
+    margin: 0.5em;
+}
+.home p{
+    font-size:2rem;
+    margin-top: 1em;
+    font-weight: 300;
+}
+.features{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+}
+.features-card i{
+    font-size: 100px;
+}
+.features-card{
+    font-size:1.5rem;
+    margin: 3rem;
+    width: 20rem;
+    border: 1px solid var(--white);
+    padding: 1.5em;
+}
+.fa-circle-check{
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin: 0.5em;
+}
+.information-one p,.information-two p{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+#information-two{
+    background-color: var(--grey);
+}
+
+.bg-image-two{
+    background: url("7.jpg");
+    background-position: center;
+    background-size: cover;
+    color:var(--white);
+}
+.purchase p{
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+form{
+    width: 90%;
+    margin: auto;
+}
+.contact label{
+    font-size: 1.4rem;
+}
+
+input[type="text"],input[type="email"]{
+    font-size: 2rem;
+    width: 100%;
+    color: var(--white);
+    background: transparent;
+    border: 2px solid var(--white);
+    border-radius: 5px 5px;
+    padding: 0.3em;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus{
+    outline: 2px solid var(--white);
+}
+textarea{
+    height: 14.5rem;
+    margin-bottom: 1.2rem;
+    width: 100%;
+    color: var(--white);
+    background: transparent;
+    border: 2px solid var(--white);
+    border-radius: 5px 5px;
+    font-size: 2rem;
+    font-family: inherit;
+    padding: 0.3em;
+}
+
+
+
+/* BUTTONS */
+button{
+    border-radius: 15px;
+    padding:0.8rem;
+    font-family: inherit;
+    font-weight: 500;
+}
+button:hover{
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.download-btn,
+.subscribe-btn,
+.order-btn,
+.purchase-btn{
+    font-size:3rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    margin-top: 2em;
+    width: 70%;
+    font-weight: 300;
+}
+.order-btn{
+    margin:1rem;
+}
+.submit-btn{
+    color: var(--primary-color);
+    background-color: var(--white);
+    border: 1px solid var(--primary-color);
+    font-size: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.submit-btn:hover{
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+.download-btn:hover,.subscribe-btn:hover,.order-btn:hover,.purchase-btn:hover{
+    background-color: var(--white);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+footer{
+    background-color: #ff0000;
+    color: var(--white);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+/*CARD  */
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 23rem;
+    height: 27em;
+    box-shadow: 2px 5px 7px 1px;
+    font-size: 1.3rem;
+    position: relative;
+    border-radius: 5px;
+    margin: 3rem;
+    color: var(--black);
+    background-color: var(--white);
+    transition: 0.1s;
+}
+.card:hover{
+    transform: scale(1.009);
+}
+.upper-part{
+    height: 35%;
+    background-color: var(--black);
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.lower-part{
+    height: 65%;
+    padding:0.095em;
+}
+.profile-pic{
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    border: 2px solid var(--primary-color);
+}
+.image-container{
+    position: absolute;
+    top:17%;
+    left:27%;
+}
+.info{
+    margin-top: 25%;
+}
+.card-name{
+    text-transform: uppercase;
+    font-family: oswald, sans-serif;
+    font-size: 1.6rem;
+}
+.card-title{
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.card-line{
+    width: 80%;
+    margin: 1rem auto;
+}
+.card-description{
+    font-family: Montserrat, sans-serif;
+}
+.social-icons{
+    font-size: 2.7rem;
+    margin-top: 0.5em;
+    cursor: pointer;
+}
+.fa-instagram{
+    color: #ef1e43;
+}
+.fa-twitter{
+    color: #1c99e7;
+}
+.fa-facebook{
+    color: #3f62a9;
+}
+
+/* MEDIA QUERIES */
+@media(min-width:480px){
+    #logo{
+        display:unset;
+        height: 70px;
+        width: 80px;
+    }
+    header{
+        background: var(--white);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav a{        
+        display: inline;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-right: 0.2em;
+        color: var(--black);
+    }
+}
+@media(min-width:720px){
+    h1{
+        font-size: 5rem;
+    }
+    h2,h3{
+        font-size: 3.5rem;
+    }
+    h5{
+        font-size: 2.7rem;
+    }
+    .home,.information-one,.information-two,form{
+        width: 80%;
+        margin: auto;
+    }
+    .download-btn,.subscribe-btn,.order-btn,.purchase-btn,.submit-btn{
+        width: 30rem;
+    }
+}
+@media(min-width:900px){
+    .features-card{
+        margin: 5rem;
+        width: 22rem;
+    }
+    .information-one,.information-two{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-item-one,.grid-item-two{
+        margin: auto;
+    }
+    form{
+        width: 50rem;
+    }
+    .contact label{
+        font-size: 1.8rem;
+    }
+    footer{
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+}
